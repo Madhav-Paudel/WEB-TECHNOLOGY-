@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML FORM</title>
+</head>
+<body>
+  <h2>Registration Form</h2>
+  <form action="post_url" method="post">
+    <table>
+      <tr>
+        <td><label for="firstname">First Name:</label></td>
+        <td><input type="text" name="firstname" id="firstname" required></td>
+      </tr>
+      <tr>
+        <td><label for="lastname">Last Name:</label></td>
+        <td><input type="text" name="lastname" id="lastname" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" name="email" id="email" required></td>
+      </tr>
+      <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" name="password" id="password" required></td>
+      </tr>
+      <tr>
+        <td><label>Gender:</label></td>
+        <td>
+          <input type="radio" name="gender" id="male" value="m">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="f">
+          <label for="female">Female</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Hobbies:</label></td>
+        <td>
+          <input type="checkbox" name="hobby" id="reading" value="reading">
+          <label for="reading">Reading</label>
+          <input type="checkbox" name="hobby" id="traveling" value="traveling">
+          <label for="traveling">Traveling</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="cid">Select Country:</label></td>
+        <td>
+          <select name="Country" id="cid">
+            <option value="">--Select--</option>
+            <option value="nepal">Nepal</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="comments">Comments:</label></td>
+        <td><textarea name="comments" id="comments" rows="3" cols="22"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <button type="submit" style="background-color: aquamarine; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer;">Submit</button>
+          <button type="reset" style="background-color: lightcoral; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer;">Reset</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
